@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* Fonts */
+
+@font-face {
+    font-family: 'abril_fatfaceregular';
+    src: url('../fonts/abrilfatface-regular-webfont.eot');
+    src: url('../fonts/abrilfatface-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/abrilfatface-regular-webfont.woff2') format('woff2'), url('../fonts/abrilfatface-regular-webfont.woff') format('woff'), url('../fonts/abrilfatface-regular-webfont.ttf') format('truetype'), url('../fonts/abrilfatface-regular-webfont.svg#abril_fatfaceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* # Base Styles
+---------------------------------------------------------------------------------------------------- */
+
+
+/* #  Layout
+---------------------------------------------------------------------------------------------------- */
+
+.row-1 {
+    background: white;
+    color: black;
+    padding-top: 30px;
+}
+
+.row-1 .style-1 {
+    font-size: 30px;
+    font-family: "abril_fatfaceregular";
+    text-transform: uppercase;
+    line-height: 65px;
+    margin-left: 84px;
+}
+
+.row-1 .style-2 {
+    font-size: 120px;
+    font-family: "abril_fatfaceregular";
+    text-transform: capitalize;
+    line-height: 65px;
+    margin-left: 84px;
+}
+
+.row-1 .style-3 {
+    font-size: 30px;
+    font-family: "abril_fatfaceregular";
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-left: 200px;
+}
+
+.empty {
+    margin-top: 50px;
+}
+
+
+/* Used CSS gradient for 2 tone ampersand sign. thanks Susannah */
+
+.ampersand {
+    font-size: 120px;
+    font-family: "abril_fatfaceregular";
+    margin-left: 84px;
+    /* This is a nice trick to add gradient fills to text! */
+    background: linear-gradient(#000000 55%, #ffffff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.row-2 {
+    background: black;
+    color: white;
+    margin-top: -90px;
+    /* in order for bottom half of ampersand to be in bottom section */
+    height: 400px;
+}
+
+.row-2 .style-1 {
+    font-size: 36px;
+    font-family: "abril_fatfaceregular";
+    text-transform: uppercase;
+    margin-left: 84px;
+}
+
+.bottom-box {
+    /* because row-2's margin was pushed up for gradient. */
+    padding-top: 100px;
+}
+
+
+/* Used link below to get left and right text to line up.
+http://stackoverflow.com/questions/8057463/two-div-side-by-side-and-aligned-verticaly-at-their-bottom 
+*/
+
+#container {
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
+}
+
+#left,
+#right {
+    /*vertical-align: top;*/
+    display: inline-block;
+    padding: 0;
+}
+
+#left {
+    width: 800px;
+}
+
+#right {
+    width: 280px;
+    /* I had to put negative margin below as vertical-align in #left, #right didn't work for some reason.*/
+    margin-left: -40px;
+    margin-top: -30px;
+}
+
+.row-2 .style-2 {
+    font-size: 120px;
+    font-family: "abril_fatfaceregular";
+    text-transform: capitalize;
+    line-height: 55px;
+    margin-left: 84px;
+}
+
+.row-2 .style-3 {
+    font-size: 36px;
+    font-family: "abril_fatfaceregular";
+    text-transform: lowercase;
+    line-height: 35px;
+}
