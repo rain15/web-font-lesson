@@ -68,9 +68,9 @@
 .row-2 {
     background: black;
     color: white;
-    margin-top: -90px;
-    /* in order for bottom half of ampersand to be in bottom section */
     height: 400px;
+    /* in order for bottom half of ampersand to be in bottom section */
+    margin-top: -90px;
 }
 
 .row-2 .style-1 {
